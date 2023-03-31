@@ -1,117 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Douglas Silva :: Dect - 2022 -->
+    <!-- Douglas Silva :: Dect - 2023 -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1">
     <title>Douglas Silva :: Dect</title>
-    <link rel="shortcut icon" href="img/favicon/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" id="favicon">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="SPLASHSCREEN">
-        <div class="ui-splash"></div>
-        <div class="ui-logo"></div>
-    </div>
+    <div class="ui-navbar">
+        <div class="ui-logo logo"></div>
 
-    <div id="WEBSITE">
-        <div class="ui-header">
-            <div class="ui-brand">
-                <div class="ui-logo"></div>
-                <div class="ui-name">Douglas Silva</div>
+        <input id="toggle" type="checkbox"></input>
+        <label for="toggle" class="ui-hamburger">
+            <div class="top"></div>
+            <div class="middle"></div>
+            <div class="bottom"></div>
+        </label>
+
+        <div class="ui-menu">
+            <div class="ui-top">
+                <div class="ui-menu-item active" data-open="HOME">Home</div>
+                <div class="ui-menu-item" data-open="COUPONS">Coupons</div>
+                <div class="ui-menu-item" data-open="CONTACT">Contact Me</div>
+                <div class="ui-menu-item" data-open="PRIVACY">Privacy Policy</div>
             </div>
-            <div class="ui-languages_container">
-                <div class="ui-languages" id="LANGUAGES">
-                    <div class="ui-language" data-language="pt-BR"></div>
-                    <div class="ui-language" data-language="en-US"></div>
+
+            <div class="ui-bottom">
+                <div class="ui-networks">
+                    <a class="ui-networks-item" data-network="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="Google Play" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="Galaxy Store" href="https://galaxy.store/dect" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="Facebook" href="https://facebook.com/100071270754459" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="Telegram" href="https://t.me/hms_watchfaces" target="_blank" rel="noopener noreferrer"></a>
+                    <a class="ui-networks-item" data-network="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
+                </div>
+
+                <div class="ui-language">
+                    <div class="ui-language-item active" data-lan="en-US">En</div>
+                    <div class="ui-language-item" data-lan="pt-BR">Pt</div>
                 </div>
             </div>
-            <div class="ui-social_networks">
-                <a data-network="Github" data-tooltip="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
-                <a data-network="Galaxy Store" data-tooltip="Galaxy Store" href="https://galaxy.store/dect" target="_blank" rel="noopener noreferrer"></a>
-                <a data-network="PlayStore" data-tooltip="PlayStore" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
-                <a data-network="Youtube" data-tooltip="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
-                <a data-network="Facebook"data-tooltip="Facebook" href="https://facebook.com/100071270754459" target="_blank" rel="noopener noreferrer"></a>
-                <a data-network="E-mail" data-tooltip="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
+
+            <div id="ui-side"></div>
+        </div>
+
+        <div class="ui-language">
+            <div class="ui-language-item active" data-lan="en-US">En</div>
+            <div class="ui-language-item" data-lan="pt-BR">Pt</div>
+        </div>
+    </div>
+
+    <div class="ui-body">
+        <div class="ui-networks">
+            <div class="ui-centered">
+                <a class="ui-networks-item" data-network="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Google Play" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Galaxy Store" href="https://galaxy.store/dect" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Facebook" href="https://facebook.com/100071270754459" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Telegram" href="https://t.me/hms_watchfaces" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
             </div>
         </div>
 
-        <div class="ui-body">
-            <div class="ui-menu">
-                <div class="ui-menu_option active" id="menu_portfolio" data-page="PORTFOLIO">
-                    <div class="ui-menu_icon"></div>
-                    <div class="ui-menu_title"></div>
-                    <div class="ui-menu_active_ind"></div>
-                </div>
-
-                <div class="ui-menu_option" id="menu_contact" data-page="CONTACT">
-                    <div class="ui-menu_icon"></div>
-                    <div class="ui-menu_title"></div>
-                    <div class="ui-menu_active_ind"></div>
-                </div>
-
-                <div class="ui-menu_option" id="menu_cupom" data-page="CUPOM">
-                    <div class="ui-menu_icon"></div>
-                    <div class="ui-menu_title"></div>
-                    <div class="ui-menu_active_ind"></div>
-                </div>
-
-                <a href="/policy" target="_blank" rel="noopener noreferrer">
-                    <div class="ui-menu_option" id="menu_policy">
-                        <div class="ui-menu_icon"></div>
-                        <div class="ui-menu_title"></div>
-                        <div class="ui-menu_active_ind"></div>
+        <div class="ui-scroller" id="SCROLLER">
+            <div class="ui-page open" id="HOME">
+                <div class="ui-grouptab">
+                    <div class="ui-grouptab-menu">
+                        <div class="ui-grouptab-item active" data-tab="APPS">Apps</div>
+                        <div class="ui-grouptab-item label_watchfaces" data-tab="WATCHFACES">Watch Faces</div>
                     </div>
-                </a>
 
-                <div class="ui-menu_option" id="menu_networks">
-                    <div class="ui-menu_icon"></div>
-                    <div class="ui-menu_title"></div>
-                    <div class="ui-menu_active_ind"></div>
-                </div>
-            </div>
+                    <div class="ui-grouptab-body">
+                        <div class="ui-tab open" id="APPS">
+                            <div class="ui-group">
+                                <input type="checkbox" id="g2" checked>
+                                <label class="ui-group-title" for="g2">Wear OS</label>
 
-            <div class="ui-content">
-                <div class="ui-page open" id="PORTFOLIO">
-                    <div class="ui-filters">
-                        <div class="ui-filters_label"></div>
+                                <div class="ui-group-content" id="g2c"></div>
+                            </div>
+
+                            <div class="ui-group">
+                                <input type="checkbox" id="g0" checked>
+                                <label class="ui-group-title" for="g0">Tizen</label>
+
+                                <div class="ui-group-content" id="g0c"></div>
+                            </div>
+
+                            <div class="ui-group">
+                                <input type="checkbox" id="g1" checked>
+                                <label class="ui-group-title" for="g1">Android</label>
+
+                                <div class="ui-group-content" id="g1c"></div>
+                            </div>
+
+                            <div class="ui-group">
+                                <input type="checkbox" id="g3" checked>
+                                <label class="ui-group-title" for="g3">Dex</label>
+
+                                <div class="ui-group-content" id="g3c"></div>
+                            </div>
+
+                            <div class="ui-group">
+                                <input type="checkbox" id="g4" checked>
+                                <label class="ui-group-title" for="g4">Web</label>
+
+                                <div class="ui-group-content" id="g4c"></div>
+                            </div>
+                        </div>
+
+                        <div class="ui-tab" id="WATCHFACES">
+                            <div class="ui-content">
+                                <div class="ui-group">
+                                    <input type="checkbox" id="gd" checked>
+                                    <label class="ui-group-title" for="gd">Digital</label>
     
-                        <div class="ui-filter active" data-filter="none"></div>
-                        <div class="ui-filter" data-filter="tizen"></div>
-                        <div class="ui-filter" data-filter="android"></div>
-                        <div class="ui-filter" data-filter="wearos"></div>
-                        <div class="ui-filter" data-filter="dex"></div>
-                        <div class="ui-filter" data-filter="web"></div>
-                    </div>
-    
-                    <div class="ui-cards"></div>
-                </div>
-    
-                <div class="ui-page" id="CONTACT">
-                    <div class="ui-form">
-                        <input class="input" id="input_name" type="text">
-                        <input class="input" id="input_email" type="email">
-                        <textarea class="textarea" id="input_message" required></textarea>
+                                    <div class="ui-group-content" id="gdc"></div>
+                                </div>
 
-                        <div class="g-recaptcha" id="GC" data-sitekey="6LfRpwQjAAAAAGbIPup8qkMOLrs6TpfgkomxOqFE"></div>
+                                <div class="ui-group">
+                                    <input type="checkbox" id="ga" checked>
+                                    <label class="ui-group-title" for="ga">Analog</label>
+    
+                                    <div class="ui-group-content" id="gac"></div>
+                                </div>
 
-                        <div class="ui-container_btns">
-                            <div class="ui-btn" id="BTN_SEND">
-                                <div class="ui-btn_label"></div>
+                                <div class="ui-group">
+                                    <input type="checkbox" id="gh" checked>
+                                    <label class="ui-group-title" for="gh">Hybrid</label>
+    
+                                    <div class="ui-group-content" id="ghc"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="ui-page" id="CUPOM"></div>
+            <div class="ui-page" id="COUPONS">
+                <div class="ui-grouptab">
+                    <div class="ui-grouptab-menu">
+                        <div class="ui-grouptab-item active" data-tab="APPS_COUPONS">Apps</div>
+                        <div class="ui-grouptab-item label_watchfaces" data-tab="WATCHFACES_COUPONS"></div>
+                    </div>
+                    
+                    <div class="ui-grouptab-body">
+                        <div class="ui-tab open" id="APPS_COUPONS"></div>
+
+                        <div class="ui-tab" id="WATCHFACES_COUPONS"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-page" id="CONTACT">
+                <div class="ui-container">
+                    <div class="ui-form">
+                        <div id="ui-form-label"></div>
+    
+                        <label class="ui-input-label" id="label_name" for="input_name"></label>
+                        <input class="ui-input" id="input_name" type="text">
+    
+                        <label class="ui-input-label" id="label_email" for="input_email"></label>
+                        <input class="ui-input" id="input_email" type="email">
+    
+                        <label class="ui-input-label" id="label_message" for="input_message"></label>
+                        <textarea class="ui-textarea" id="input_message" required></textarea>
+    
+                        <div class="g-recaptcha" id="GC" data-sitekey="6LfRpwQjAAAAAGbIPup8qkMOLrs6TpfgkomxOqFE"></div>
+    
+                        <div class="ui-btn" id="BTN_SEND">
+                            <div class="ui-btn_label--send"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-page" id="PRIVACY">
+                <iframe id="policy" data-loaded="0"></iframe>
             </div>
         </div>
     </div>
 
-    <div id="DETAILS">
+    <div class="ui-popup" id="APP_DETAILS">
+        <div class="ui-popup-background"></div>
+
         <div class="ui-content_details">
-            <div class="ui-close"></div>
+            <div class="ui-close ui-close-popup"></div>
 
             <div class="ui-container_video">
                 <div class="ui-no_video"></div>
@@ -120,11 +198,6 @@
 
             <div class="ui-container_image">
                 <div class="ui-no_image"></div>
-
-                <div class="ui-zoom">
-                    <div class="ui-close"></div> 
-                    <img>
-                </div>
             </div>
 
             <div class="ui-container_desc"></div>
@@ -138,22 +211,43 @@
         </div>
     </div>
 
-    <div id="SHADOW"></div>
+    <div class="ui-popup" id="INSTALL_APP">
+        <div class="ui-popup-background"></div>
 
-    <div vw class="ui-libras">
-		<div vw-access-button class="active"></div>
-		<div vw-plugin-wrapper>
-			<div class="vw-plugin-top-wrapper"></div>
-		</div>
-	</div>
+        <div class="ui-popup-body">
+            <div class="ui-close ui-close-popup"></div>
+
+            <div class="ui-content">
+                <div>Ops... &#128517;</div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="ui-container_btns">
+                <div class="ui-btn" id="BTN_INSTALL" data-btn="Google Play">
+                    <div class="ui-btn_icon"></div>
+                    <div class="ui-btn_label"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div vw class="enabled" id="ui-libras">
+        <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
 
     <script src="js/apps.js"></script>
+    <script src="js/watchfaces.js"></script>
     <script src="js/language.js"></script>
-    <script src="js/cupom.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/coupons.js" async defer></script>
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-	<script>
+	
+    <script>
         try {
             new window.VLibras.Widget('https://vlibras.gov.br/app');
         } catch (ignore) {}
