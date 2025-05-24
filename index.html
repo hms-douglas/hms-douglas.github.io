@@ -13,53 +13,58 @@
     <div class="ui-navbar">
         <div class="ui-logo logo"></div>
 
-        <input id="toggle" type="checkbox"></input>
-        <label for="toggle" class="ui-hamburger">
+        <div class="ui-menu">
+            <div class="ui-menu-item active" data-open="HOME">Home</div>
+            <div class="ui-menu-item" data-open="COUPONS">Coupons</div>
+            <div class="ui-menu-item" data-open="CONTACT">Contact Me</div>
+            <div class="ui-menu-item" data-open="PRIVACY">Privacy Policy</div>
+        </div>
+
+        <label for="toggle" class="ui-hamburger" id="toggleMenu">
             <div class="top"></div>
             <div class="middle"></div>
             <div class="bottom"></div>
         </label>
 
-        <div class="ui-menu">
-            <div class="ui-top">
-                <div class="ui-menu-item active" data-open="HOME">Home</div>
-                <div class="ui-menu-item" data-open="COUPONS">Coupons</div>
-                <div class="ui-menu-item" data-open="CONTACT">Contact Me</div>
-                <div class="ui-menu-item" data-open="PRIVACY">Privacy Policy</div>
-            </div>
-
-            <div class="ui-bottom">
-                <div class="ui-support_me">
-                    <a class="ui-support_me-item" data-network="PayPal" href="https://www.paypal.com/donate/?hosted_button_id=QAHLC3GARUSVY" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-
-                <div class="ui-networks">
-                    <a class="ui-networks-item" data-network="Google Play" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="Galaxy Store" href="https://galaxy.store/dect" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="Facebook" href="https://facebook.com/100071270754459" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="Instagram" href="https://instagram.com/ds_dect" target="_blank" rel="noopener noreferrer"></a>
-                    <a class="ui-networks-item" data-network="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
-                </div>
-
-                <div class="ui-language">
-                    <div class="ui-language-item active" data-lan="en-US">En</div>
-                    <div class="ui-language-item" data-lan="pt-BR">Pt</div>
-                </div>
-            </div>
-
-            <div id="ui-side"></div>
-        </div>
-
         <div class="ui-language">
-            <div class="ui-language-item active" data-lan="en-US">En</div>
-            <div class="ui-language-item" data-lan="pt-BR">Pt</div>
+            <div class="ui-language-item" data-lan="en-US"></div>
+            <div class="ui-language-item" data-lan="pt-BR"></div>
         </div>
 
         <div class="ui-support_me">
             <a class="ui-support_me-item" data-network="PayPal" href="https://www.paypal.com/donate/?hosted_button_id=QAHLC3GARUSVY" target="_blank" rel="noopener noreferrer"></a>
+            <a class="ui-support_me-item ui-support_me-item--crypto" data-network="Crypto"></a>
         </div>
+    </div>
+
+    <div class="ui-menu" id="menu">
+        <div class="ui-top">
+            <div class="ui-menu-item active" data-open="HOME">Home</div>
+            <div class="ui-menu-item" data-open="COUPONS">Coupons</div>
+            <div class="ui-menu-item" data-open="CONTACT">Contact Me</div>
+            <div class="ui-menu-item" data-open="PRIVACY">Privacy Policy</div>
+        </div>
+
+        <div class="ui-bottom">
+            <div class="ui-support_me">
+                <a class="ui-support_me-item" data-network="PayPal" href="https://www.paypal.com/donate/?hosted_button_id=QAHLC3GARUSVY" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-support_me-item ui-support_me-item--crypto" data-network="Crypto"></a>
+            </div>
+
+            <div class="ui-networks">
+                <a class="ui-networks-item" data-network="Google Play" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
+                <a class="ui-networks-item" data-network="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
+            </div>
+
+            <div class="ui-language">
+                <div class="ui-language-item" data-lan="en-US"></div>
+                <div class="ui-language-item" data-lan="pt-BR"></div>
+            </div>
+        </div>
+
+        <div id="ui-side"></div>
     </div>
 
     <div class="ui-body">
@@ -67,10 +72,7 @@
             <div class="ui-centered">
                 <a class="ui-networks-item" title="Google Play" data-network="Google Play" href="https://play.google.com/store/apps/dev?id=4959669588648058756" target="_blank" rel="noopener noreferrer"></a>
                 <a class="ui-networks-item" title="Github" data-network="Github" href="https://github.com/hms-douglas" target="_blank" rel="noopener noreferrer"></a>
-                <a class="ui-networks-item" title="Galaxy Store" data-network="Galaxy Store" href="https://galaxy.store/dect" target="_blank" rel="noopener noreferrer"></a>
                 <a class="ui-networks-item" title="Youtube" data-network="Youtube" href="https://www.youtube.com/channel/UC7m8ohVqia8g2VIuqNmAsLA" target="_blank" rel="noopener noreferrer"></a>
-                <a class="ui-networks-item" title="Facebook" data-network="Facebook" href="https://facebook.com/100071270754459" target="_blank" rel="noopener noreferrer"></a>
-                <a class="ui-networks-item" title="Instagram" data-network="Instagram" href="https://instagram.com/ds_dect" target="_blank" rel="noopener noreferrer"></a>
                 <a class="ui-networks-item" title="E-mail" data-network="E-mail" href="mailto:dect@outlook.com.br?subject=Portfolio" target="_blank" rel="noopener noreferrer"></a>
             </div>
         </div>
@@ -90,13 +92,6 @@
                                 <label class="ui-group-title" for="g2">Wear OS</label>
 
                                 <div class="ui-group-content" id="g2c"></div>
-                            </div>
-
-                            <div class="ui-group">
-                                <input type="checkbox" id="g0" checked>
-                                <label class="ui-group-title" for="g0">Tizen</label>
-
-                                <div class="ui-group-content" id="g0c"></div>
                             </div>
 
                             <div class="ui-group">
@@ -125,6 +120,13 @@
                                 <label class="ui-group-title" for="g5" id="lib">Library</label>
 
                                 <div class="ui-group-content" id="g5c"></div>
+                            </div>
+
+                            <div class="ui-group">
+                                <input type="checkbox" id="g0" checked>
+                                <label class="ui-group-title" for="g0">Tizen <span id="tizenTerminated"></span></label>
+
+                                <div class="ui-group-content" id="g0c"></div>
                             </div>
                         </div>
 
@@ -243,6 +245,29 @@
                     <div class="ui-btn_icon"></div>
                     <div class="ui-btn_label"></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui-popup" id="CRYPTO">
+        <div class="ui-popup-background"></div>
+
+        <div class="ui-popup-body">
+            <div class="ui-close ui-close-popup"></div>
+
+            <div class="ui-content">
+                <table class="table--crypto">
+                    <tr>
+                        <td><span class="icon_crypto icon_crypto--bitcoin"></span></td>
+                        <td>Bitcoin</td>
+                        <td>3NkK4LMwMhKefe2phqf7Vrp1uQynu1Gs6x</td>
+                    </tr>
+                    <tr>
+                        <td><span class="icon_crypto icon_crypto--ethereum"></span></td>
+                        <td>Ethereum</td>
+                        <td>0xfea5dd21ebf73c5b4a2445c7713f6b5316dfac4d</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
